@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 255, 255)
+}
+
+.container {
+    text-align: center;
+}
+
+.image-container {  
+    position: relative;
+    display: inline-block;
+}
+
+#image {
+    margin-top: 50px;
+    max-width: 60%;
+    height: auto;
+}
+
+#textOverlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 48px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#textOverlaySecond {
+    position: absolute;
+    bottom: 165px;
+    left: 35%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 11px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
