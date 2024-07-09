@@ -4,21 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Редактор</title>
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="text">
+        <h1>Редактор</h1>
+        <h2>Для создания собственного<h2>
+        <h3> дизайна чтобы выделяться на дороге</h3>
+    </div>
     <div class="container">
-        <h1>Текст с подсказкой пользователю</h1>
-        <h1></h1>
-        <input type="text" id="textInput" placeholder="Введите текст">
-        <select id="fontSelect">
-            <option value="Arial">Arial</option>
-            <option value="Courier New">Courier New</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Times New Roman">Times New Roman</option>
-            <option value="Verdana">Verdana</option>
-        </select>
-        <button id="applyText">Добавить текст</button>
+        
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+            <label for="name" class="form__label">Ваш текст на рамке</label>
+        </div>
+
+        <div class="select" tabindex="1">
+            <input class="selectopt" name="font" type="radio" id="opt1" value="'Avenir Next Cyr Bold">
+            <label for="opt1" class="option" style="font-family: 'Avenir Next Cyr Bold';">Avenir Next Cyr Bold</label>
+            
+            <input class="selectopt" name="font" type="radio" id="opt2" value="'Avenir Next Cyr Light'">
+            <label for="opt2" class="option" style="font-family: 'Avenir Next Cyr Light';">Avenir Next Cyr Light</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt3" value="'Porsche', sans-serif">
+            <label for="opt3" class="option" style="font-family: 'Porsche', sans-serif;">Porsche</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt4" value="'Carbon', sans-serif">
+            <label for="opt4" class="option" style="font-family: 'Carbon';">Carbon</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt5" value="'stencil'">
+            <label for="opt5" class="option" style="font-family: 'stencil';">stencil</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt6" value="'Xolonium-Bold', sans-serif">
+            <label for="opt6" class="option" style="font-family: 'Xolonium-Bold';">Xolonium Bold</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt7" value="'Xolonium-Regular', sans-serif">
+            <label for="opt7" class="option" style="font-family: 'Xolonium-Regular';">Xolonium Regular</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt8" value="'The Voice FontCRUS', sans-serif">
+            <label for="opt8" class="option" style="font-family: 'The Voice FontCRUS', sans-serif;">The Voice FontCRUS</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt9" value="'Stalinist One', sans-serif">
+            <label for="opt9" class="option" style="font-family: 'Stalinist One', sans-serif;">Stalinist One</label>
+
+            <input class="selectopt" name="font" type="radio" id="opt10" value="'Orbitron', sans-serif">
+            <label for="opt10" class="option" style="font-family: 'Orbitron', sans-serif;">Orbitron</label>
+        </div>
+
+        <button id="applyText" class="button">ДОБАВИТЬ ТЕКСТ</button>
+        
         <div class="image-container">
             <img src="your-image.jpg" alt="Image" id="image">
             <div id="textOverlay"></div>
@@ -26,8 +62,11 @@
         <div class="image-container">
             <img src="your-second-image.jpg" alt="Image" id="secondImage">
             <div id="textOverlaySecond"></div>
-        </div>        
+        </div>
+        
+        <div class="glow"></div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
