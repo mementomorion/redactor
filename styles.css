@@ -177,6 +177,7 @@ body {
 
 /* Form Group Styles */
 .form__group {
+    z-index: 1111111;
     position: relative;
     padding: 15px 0 0;
     width: 220px;
@@ -244,6 +245,7 @@ body {
 
 /* Select Styles */
 .select {
+    z-index: 1111111;
     display: flex;
     flex-direction: column;
     position: relative;
