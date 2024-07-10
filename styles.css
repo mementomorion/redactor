@@ -150,7 +150,7 @@ body {
 
 #textOverlay {
     position: absolute;
-    bottom: 10px;
+    bottom: 16px !important;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -165,8 +165,8 @@ body {
     display: block;
     width: 100%;
     max-width: 100%;
-    left: 1642px;
-    top: 1744px;
+    left: 1782px;
+    top: 1876px;
     transform: translateX(-50%);
     color: white;
     white-space: nowrap;
@@ -529,6 +529,7 @@ body {
 @media (max-width: 1200px) {
     .text {
         width: 80%;
+        height: 20% !important;
         left: 10vw;
         top: 2vw;
     }
@@ -563,20 +564,37 @@ body {
     }
 
     #textOverlay {
-        font-size: 36px;
+        font-size: 12px !important;
+        top: 52px;
         bottom: 5px;
     }
-
+    .image-container{
+        scale: 1.5;
+        top: -420px;
+    }
+    #applyGlow{
+        width: 80%;
+    }
+    #applyText{
+        width: 80%;
+    }
     #textOverlaySecond {
-        position: absolute;
-        font-size: 3px;
-        top: 170px;
+        display: block;
+        position: relative;
+        font-size: 9px !important;
+        top: 448px;
+        left: 366px;
+    }
+    html{
+        overflow-x: hidden;
+        max-width: 992px;
     }
 }
 
 @media (max-width: 992px) {
     html{
         overflow-x: hidden;
+        max-width: 992px;
     }
     .text {
         width: 90%;
@@ -622,6 +640,6 @@ body {
 
     #textOverlaySecond {
         font-size: 3px;
-        bottom: 80px;
+        bottom: 410px;
     }
 }
