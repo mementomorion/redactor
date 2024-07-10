@@ -488,7 +488,13 @@ body {
 
     #textOverlay {
         font-size: 24px;
-        bottom: 5px;
+        top: 55px !important;
+
+    }
+    .glow3 {
+        top: 380px;
+        scale: .3;
+        left: -620px;
     }
 
     #textOverlaySecond {
