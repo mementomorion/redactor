@@ -3,7 +3,14 @@
     left: 0vw !important;
 }
 
-
+    body::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(17, 18, 22);        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(252, 252, 252);    /* цвет плашки */     /* закругления плашки */  }
 
 
 /* Подключаем шрифты через @font-face */
@@ -67,7 +74,7 @@ html {
     width: 100%;
     margin-top: 140px;
     overflow-x: hidden;
-
+    overflow-y: scroll;
 }
 
 .text{
@@ -155,14 +162,17 @@ body {
 
 #textOverlaySecond {
     position: absolute;
-    bottom: 165px;
-    top: 887px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    left: 1642px;
+    top: 1744px;
     transform: translateX(-50%);
     color: white;
-    font-size: 11px;
     white-space: nowrap;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    z-index: 10;
+    font-size:12px;
+    z-index: 22;
 }
 
 /* Form Group Styles */
@@ -414,7 +424,6 @@ body {
 #textOverlay, #textOverlaySecond {
     position: absolute;
     color: white;
-    font-size: 48px;
     white-space: nowrap;
     letter-spacing: 6px;
     text-shadow: none;
@@ -424,14 +433,6 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-#textOverlaySecond {
-    bottom: 165px;
-    left: 49%;
-    transform: translateX(-50%);
-    font-size: 11px;
-    z-index: 10;
 }
 
 /* Медиазапросы для мобильных устройств */
@@ -463,10 +464,6 @@ body {
         left: 12px;
         scale: 2.5;
     }
-    #textOverlaySecond{
-        font-size: 2px !important;
-        top: 278px !important;
-    }
 
     .form__group {
         width: 60%;
@@ -493,9 +490,131 @@ body {
     }
 
     #textOverlaySecond {
-        font-size: 3px !important;
+        font-size: 3px;
         left: 210px;
         bottom: 80px;
         letter-spacing: 1px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .text {
+        width: 80%;
+        left: 10vw;
+        top: 2vw;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2, h3 {
+        font-size: 14px;
+        width: 80%;
+        left: 10vw;
+    }
+
+    .form__group {
+        width: 80%;
+        left: 10vw;
+        top: -5%;
+    }
+
+    .select {
+        width: 80%;
+        left: 10vw;
+        top: -5%;
+    }
+
+    .button {
+        left: 0;
+        top: 0;
+        margin: 10px 5px;
+        width: calc(100% - 20px);
+    }
+
+    #textOverlay {
+        font-size: 36px;
+        bottom: 5px;
+    }
+
+    #textOverlaySecond {
+        position: absolute;
+        font-size: 3px;
+        top: 170px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        width: 90%;
+        left: 5vw;
+        top: 2vw;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2, h3 {
+        font-size: 12px;
+        width: 90%;
+        left: 5vw;
+    }
+
+    .form__group {
+        width: 90%;
+        left: 5vw;
+        top: -5%;
+    }
+
+    .select {
+        width: 90%;
+        left: 5vw;
+        top: -5%;
+    }
+
+    .button {
+        left: 0;
+        top: 0;
+        margin: 10px 5px;
+        width: calc(100% - 20px);
+    }
+
+    #textOverlay {
+        font-size: 24px;
+        bottom: 5px;
+    }
+
+    #textOverlaySecond {
+        font-size: 3px;
+        bottom: 80px;
     }
 }
