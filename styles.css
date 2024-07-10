@@ -157,7 +157,6 @@ body {
     position: absolute;
     bottom: 165px;
     top: 887px;
-    left: 48%;
     transform: translateX(-50%);
     color: white;
     font-size: 11px;
@@ -429,7 +428,7 @@ body {
 
 #textOverlaySecond {
     bottom: 165px;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
     font-size: 11px;
     z-index: 10;
