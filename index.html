@@ -28,7 +28,7 @@
             <input class="selectopt" name="font" type="radio" id="opt2" value="'Avenir Next Cyr Light'">
             <label for="opt2" class="option" style="font-family: 'Avenir Next Cyr Light';">Avenir Next Cyr Light</label>
 
-            <input class="selectopt" name="font" type="radio" id="opt3" value="'Porsche', sans-serif">
+            <input class="selectopt" name="font" type="radio" id="opt3" value="'Porsche', sans-serif" checked>
             <label for="opt3" class="option" style="font-family: 'Porsche', sans-serif;">Porsche</label>
 
             <input class="selectopt" name="font" type="radio" id="opt4" value="'Carbon', sans-serif">
@@ -53,20 +53,31 @@
             <label for="opt10" class="option" style="font-family: 'Orbitron', sans-serif;">Orbitron</label>
         </div>
 
-        <button id="applyText" class="button">ДОБАВИТЬ ТЕКСТ</button>
+        <button id="applyText" class="button glowbtn">ДОБАВИТЬ ТЕКСТ</button>
+        <button id="applyGlow" class="button glowbtn">LED</button>
+
         
         <div class="image-container">
-            <img src="your-image.jpg" alt="Image" id="image">
+            <img src="pamka-bull.png" alt="Image" id="image">
             <div id="textOverlay"></div>
         </div>
-        <div class="image-container">
-            <img src="your-second-image.jpg" alt="Image" id="secondImage">
-            <div id="textOverlaySecond"></div>
-        </div>
         
+        
+
+        <div class = 'toggle-switch'>
+            <label>
+            </label>
+            </a>
+        </div>
+
+        <div id="glow3" class="glow3"></div>
         <div class="glow"></div>
+        <div class="glow2"></div>
     </div>
-    
+    <div class="image-container2">
+        <img src="car4.png" alt="Image" id="secondImage" >
+        <div id="textOverlaySecond"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
