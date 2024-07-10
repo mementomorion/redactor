@@ -592,12 +592,14 @@ body {
     }
 
     .form__group {
+        z-index: 11111111;
         width: 90%;
         left: 5vw;
         top: -5%;
     }
 
     .select {
+        z-index: 11111111;
         width: 90%;
         left: 5vw;
         top: -5%;
