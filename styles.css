@@ -438,7 +438,7 @@ body {
 }
 
 /* Медиазапросы для мобильных устройств */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .text {
         width: 90%;
         left: 5vw;
@@ -503,33 +503,7 @@ body {
         bottom: 80px;
         letter-spacing: 1px
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 
 @media (max-width: 1200px) {
@@ -594,58 +568,5 @@ body {
     html{
         overflow-x: hidden;
         max-width: 992px;
-    }
-}
-
-@media (max-width: 992px) {
-    html{
-        overflow-x: hidden;
-        max-width: 992px;
-    }
-    .text {
-        width: 90%;
-        left: 5vw;
-        top: 2vw;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    h2, h3 {
-        font-size: 12px;
-        width: 90%;
-        left: 5vw;
-    }
-
-    .form__group {
-        z-index: 11111111;
-        width: 90%;
-        left: 5vw;
-        top: -5%;
-    }
-
-    .select {
-        z-index: 11111111;
-        width: 90%;
-        left: 5vw;
-        top: -5%;
-    }
-
-    .button {
-        left: 0;
-        top: 0;
-        margin: 10px 5px;
-        width: calc(100% - 20px);
-    }
-
-    #textOverlay {
-        font-size: 24px;
-        bottom: 5px;
-    }
-
-    #textOverlaySecond {
-        font-size: 3px;
-        bottom: 410px;
     }
 }
