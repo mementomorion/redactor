@@ -180,7 +180,7 @@ body {
     position: relative;
     padding: 15px 0 0;
     width: 220px;
-    left: 66vw;
+    left: 1300px;
     color: #fff;
     top: -35%;
 
@@ -248,8 +248,8 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 24vh;
-    left: 66vw;
+    width: 220px;
+    left: 1300px;
     height: 40px;
     top: -35%;
     margin-top: 12px;
