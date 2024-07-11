@@ -162,17 +162,15 @@ body {
 
 #textOverlaySecond {
     position: absolute;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    left: 1440px;
-    top: 1584px;
+    bottom: -827px !important;
+    left: 49%;
     transform: translateX(-50%);
     color: white;
+    font-size: 12px;
     white-space: nowrap;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size:12px;
-    z-index: 22;
+    letter-spacing: 6px;
+    text-shadow: none;
+    z-index: 2222222;
 }
 
 /* Form Group Styles */
@@ -507,6 +505,9 @@ body {
 
 
 @media (max-width: 1200px) {
+    html{
+        overflow-x: inherit;
+    }
     .text {
         width: 80%;
         height: 20% !important;
@@ -524,6 +525,26 @@ body {
         left: 10vw;
     }
 
+    .glow1 {
+        display: none !important;
+        width: 768px;
+        top: -120px !important;
+        left: -1030px !important;
+    }
+    .glow2 {
+        display: none !important;
+        position: absolute;
+        width: 768px;
+        top: -340px !important;
+        left: -300px !important;
+    }
+    .glow3 {
+        display: none !important;
+        position: absolute;
+        width: 400px;
+        top: 340px !important;
+        left: 0px !important;
+    }
     .form__group {
         width: 80%;
         left: 10vw;
@@ -552,6 +573,10 @@ body {
         scale: 1.5;
         top: -420px;
     }
+    .image-container2{
+        top: -200px;
+        scale: 2.5;
+    }
     #applyGlow{
         width: 80%;
     }
@@ -559,11 +584,11 @@ body {
         width: 80%;
     }
     #textOverlaySecond {
-        display: block;
-        position: relative;
-        font-size: 9px !important;
-        top: 448px;
-        left: 366px;
+        font-size: 8px !important;
+        top: 1286px;
+        left: 180px;
+        letter-spacing: 3px;
+
     }
     html{
         overflow-x: hidden;
