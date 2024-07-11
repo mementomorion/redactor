@@ -24,3 +24,18 @@ document.getElementById('applyGlow').addEventListener('click', function() {
         textOverlay2.style.textShadow = 'none';
     }
 });
+function checkOrientation() {
+    if (window.innerHeight > window.innerWidth) {
+        document.getElementById('rotateMessage').style.display = 'block';
+    } else {
+        document.getElementById('rotateMessage').style.display = 'none';
+    }
+}
+
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);
+
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+    checkOrientation();
+});
